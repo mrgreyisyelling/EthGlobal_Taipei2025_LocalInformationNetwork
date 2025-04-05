@@ -113,7 +113,7 @@ export default {
 
 		// 🌍 Relay to Aggregator
 		try {
-			const aggregatorURL = "https://latencybubble.io/ingest";
+			const aggregatorURL = "https://aggregator-receiver.mike-penta.workers.dev";
 		
 			const aggregatorPayload = {
 			key,

@@ -1,0 +1,9 @@
+name = "aggregator-receiver"
+main = "src/index.js"
+compatibility_date = "2025-04-04"
+
+# Optional KV binding if you want to persist
+# [[kv_namespaces]]
+[[kv_namespaces]]
+binding = "MESSAGES"
+id = "<your-namespace-id>"
