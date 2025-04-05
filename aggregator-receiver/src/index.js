@@ -1,5 +1,28 @@
 export default {
+
+	const emailToENS = {
+		"mike.penta@gmail.com": "mikepenta.eth",
+	  };
+
+
 	async fetch(request, env, ctx) {
+
+
+		const { from } = await request.json();
+
+		const ens = emailToENS[from.toLowerCase()];
+		if (!ens) {
+		  return new Response("Unregistered email", { status: 403 });
+		}
+		
+		const wallet = await provider.resolveName(ens);
+		if (!wallet) {
+		  return new Response("ENS not resolved", { status: 404 });
+		}
+		
+		console.log("✉️ Message from", from, "is attributed to ENS:", ens, "→", wallet);
+		
+	
 	  if (request.method !== "POST") {
 		return new Response("POST required", { status: 405 });
 	  }
