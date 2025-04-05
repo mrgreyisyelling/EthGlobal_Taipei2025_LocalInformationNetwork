@@ -1,0 +1,11 @@
+name = "web3-relay"
+main = "src/index.js"
+compatibility_date = "2024-04-05"
+
+# ✅ new way to enable Node.js support
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+CONTRACT_ADDRESS = "0x4C122a647cBBD66Ac6FAadc02079179136fB01EA"
+RPC_URL = "https://polygon-amoy.infura.io/v3/0ddaeee858d943ddbe1961113b52c488"
+
