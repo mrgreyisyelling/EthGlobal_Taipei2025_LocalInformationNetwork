@@ -5,5 +5,5 @@ compatibility_date = "2025-04-04"
 # Optional KV binding if you want to persist
 # [[kv_namespaces]]
 [[kv_namespaces]]
-binding = "MESSAGES"
-id = "<your-namespace-id>"
+binding = "Agg_MESSAGES"
+id = "59ee1f7ae9444808be0d30a0837fedb8"
