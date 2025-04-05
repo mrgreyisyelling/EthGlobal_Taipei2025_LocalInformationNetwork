@@ -1,0 +1,8 @@
+name = "email-repeater"
+main = "src/index.js"
+compatibility_date = "2025-04-05"
+compatibility_flags = ["nodejs_compat"]
+
+[[kv_namespaces]]
+binding = "MESSAGES"
+id = "6148885881dc4064aae5a61ce920a5d9"
